@@ -5,7 +5,7 @@
           <img src="{{ asset('/template/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Kelompok</a>
         </div>
       </div>
 
@@ -36,19 +36,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/" class="nav-link">
+                <a href="/breakfast" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Breakfast</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="/lunch" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lunch</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
+                <a href="/dinner" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dinner</p>
                 </a>
