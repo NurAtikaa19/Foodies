@@ -62,7 +62,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script>
     var items = [
-        ['001', 'Bubur Ayam', 15000, 'Bubur Ayam Spesial', 'https://i1.wp.com/resepkoki.id/wp-content/uploads/2017/04/Resep-Bubur-Ayam.jpg?fit=1536%2C1536&ssl=1.jpg'],
+        ['001', 'Bubur Ayam', 15000, 'Bubur Ayam Spesial', 'https://asset-2.tstatic.net/tribunmedanwiki/foto/bank/images/satu-porsi-lontong-malam-insomnia.jpg'],
         ['002', 'Nasi Goreng', 200000, 'Nasi Goreng Spesial', 'https://th.bing.com/th/id/R.2b29c1d28a67882516a37e19686f2059?rik=Cex2CHRiiW70yQ&riu=http%3a%2f%2fwww.agrowindo.com%2fwp-content%2fuploads%2f2017%2f06%2fPeluang-usaha-nasi-goreng-seafood.jpg&ehk=w0JEpEeAAoN335cUhyOIN1kDHExHcVTqTcxebp7%2bcvM%3d&risl=&pid=ImgRaw&r=0.jpg'],
         ['003', 'Mie Goreng', 10000, 'Indomie Goreng Spesial', 'https://th.bing.com/th/id/OIP.-hqr8b1zbJilFojbjJjJfwHaFF?rs=1&pid=ImgDetMain.jpeg'],
     ];
@@ -95,12 +95,12 @@
         var addToCartButtons = document.querySelectorAll(".addToCart");
         addToCartButtons.forEach(function(button) {
             button.addEventListener("click", function() {
-                var itemId = button.getAttribute("data-id");
+                var itemId = button.getAttribute("edit");
                 var selectedItem = items.find(item => item[0] === itemId);
                 cart.push(selectedItem);
                 itemCount++;
                 cartButton.innerHTML = `<i class="fas fa-shopping-cart"></i>(${itemCount})`;
-                window.location.href = '/cart'; // Redirect to cart page
+                window.location.href = '/edit'; // Redirect to cart page
             });
         });
     }

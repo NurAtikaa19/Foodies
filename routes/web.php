@@ -5,6 +5,8 @@ use App\Http\Controllers\MealTypeController;
 use App\Http\Controllers\CartController;
 
 Route::get('/breakfast', [MealTypeController::class, 'index']);
+Route::get('/dinner', [MealTypeController::class, 'index']);
+Route::get('/Lunch', [MealTypeController::class, 'index']);
 Route::get('/', function () {
     return view('welcome');
 });
@@ -24,6 +26,8 @@ Route::get('/dinners', [MealTypeController::class, 'dinner'])->name('dinners.ind
 // Route::get('/cart/index', [CartController::class, 'index'])->name('cart.index');
 
 Route::resource('Breakfast', 'CartController');
+Route::resource('dinners', 'CartController');
+Route::resource('Lunch', 'CartController');
 // Route::resource('cart', 'CartController');
 Route::get('/cart/index', [CartController::class, 'index'])->name('cart.index');
 
